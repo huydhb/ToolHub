@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ToolHub — Tổng hợp các công cụ tiện ích miễn phí cho lập trình viên và người dùng." />
+  <title>ToolHub — Tổng Hợp Công Cụ</title>
+
+  <!-- Fonts: Satoshi & Cabinet Grotesk (Fontshare) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+
+  <!-- Fonts: JetBrains Mono (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/tools.css">
+</head>
+<body>
+  <!-- Skip navigation link for accessibility -->
+  <a href="#main" class="skip-link">Chuyển đến nội dung chính</a>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header>
+    <nav aria-label="Điều hướng chính">
+      <!-- Logo -->
+      <a href="#/" class="logo" aria-label="ToolHub - Trang chủ">
+        <svg aria-hidden="true" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="8" fill="currentColor" opacity="0.08"/>
+          <path d="M6 14h4M18 14h4M14 6v4M14 18v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="14" cy="14" r="4" stroke="var(--color-primary)" stroke-width="2.5" fill="none"/>
+          <circle cx="14" cy="14" r="1.5" fill="var(--color-primary)"/>
+        </svg>
+        Tool<span class="logo-dot">Hub</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#/" class="active">Công cụ</a></li>
+        <li><a href="#contribute">Đóng góp</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <label class="nav-search" for="search-input">
+          <i data-lucide="search"></i>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Tìm công cụ…"
+            aria-label="Tìm kiếm công cụ"
+            autocomplete="off"
+          />
+        </label>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Chuyển đổi giao diện tối/sáng">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══════════ MAIN ══════════ -->
+  <main id="main">
+    <div id="app"><!-- Router renders here --></div>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2024 ToolHub. Tất cả công cụ miễn phí, không cần đăng ký.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════ TOAST NOTIFICATIONS ══════════ -->
+  <div id="toast" aria-live="polite" aria-atomic="true" class="toast-container"></div>
+
+  <!-- ══════════ APP ENTRY POINT ══════════ -->
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
