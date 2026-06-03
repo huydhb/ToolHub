@@ -52,7 +52,7 @@ function buildCardHtml(t) {
       <div class="card-footer">
         <span class="card-source">
           <i data-lucide="box" aria-hidden="true"></i>
-          toolhub.local
+          toolhub.vn
         </span>
         <button
           class="open-btn"

@@ -79,7 +79,7 @@ export function mount(container) {
             <!-- Test String Input -->
             <div class="rt-textarea-container">
               <label class="rt-field-label" for="rt-text">Văn bản kiểm thử (Test String)</label>
-              <textarea id="rt-text" class="rt-textarea" rows="6" placeholder="Nhập văn bản cần so khớp regex vào đây..." spellcheck="false">Mọi thông tin liên hệ xin gửi về admin@toolhub.local hoặc support.team@gmail.com.
+              <textarea id="rt-text" class="rt-textarea" rows="6" placeholder="Nhập văn bản cần so khớp regex vào đây..." spellcheck="false">Mọi thông tin liên hệ xin gửi về admin@toolhub.vn hoặc support.team@gmail.com.
 Sử dụng số hotline 0987-654-321 nếu khẩn cấp.
 Chào mừng đến với ToolHub!</textarea>
             </div>
