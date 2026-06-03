@@ -147,7 +147,7 @@ function renderHome(appEl, tools) {
         </div>
         <div class="contribute-actions">
           <a
-            href="https://github.com"
+            href="https://github.com/huydhb/ToolHub/pulls"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary"
@@ -155,7 +155,7 @@ function renderHome(appEl, tools) {
             <i data-lucide="github"></i> GitHub
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/huydhb/ToolHub/issues"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-ghost"
